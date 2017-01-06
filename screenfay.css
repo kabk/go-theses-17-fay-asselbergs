@@ -1,0 +1,399 @@
+			@media screen and (min-width: 480px) {
+    nav {
+        width: 200px;
+        float: left;     /* This makes it float to the left of the main content */
+        margin-left: 0;
+    }
+
+
+			#header{ /*navigatie*/
+				top:5px;
+				width:100vw;
+				height:10vh;
+				position:fixed;
+				z-index:999;
+			    text-align: center;
+			    word-spacing: 70px;
+			    font-size: 10pt;
+			    font-family: helvetica;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			}
+
+			#header a {
+				color:blue
+
+			}
+			#header a:hover {
+				font-family:helvetica;
+			    color: white; /* text color */
+			    -webkit-text-stroke: 0.5px blue; /* stroke color and weight */
+			    text-decoration: none;
+
+			}
+
+			.element{
+				 font-size:110px; 
+				 position:absolute; 
+				 margin-left:50px;
+				 margin-top:30px;
+				}
+			#element-1{ 
+				font-family:helvetica; 
+				 letter-spacing: 2px;
+
+				 color: transparent; /* text color */
+			    -webkit-text-stroke: 1.3px blue; /* stroke color and weight */
+			    text-decoration: none;z-index:1; 
+			}
+			#element-2{
+				 font-family:georgia; 
+				 color: transparent; /* text color */
+			    -webkit-text-stroke: 1.3px black; /* stroke color and weight */
+			    text-decoration: none; 
+			    z-index:1; }
+
+			.footnote{
+				width:200px;
+				height:200px;
+				background-color: blue;
+				color:white;
+				margin:5px;
+				margin-right:100px;
+				font-family: helvetica;
+  				text-align:left;
+   				font-size:10pt;
+   				text-decoration: none;
+ 
+			}
+			#intro{
+				margin-top:10vh;
+				font-size:100px;
+				color:blue;
+			}
+
+			#columnLeft{
+				top:1200px;
+				height:100vh;
+			}
+
+
+			#columnRight{
+				height:100vh;
+				padding:20px;
+				top:800px;
+			}
+
+			#columnRight br {
+  				line-height: 300pt;
+				}
+
+			#columnLeft h1{
+				font-family: helvetica;
+			    text-align:left;
+			    font-size:20pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-left: 120px;
+			    margin-bottom:20px;
+			    display: inline-block;
+			    line-height: 110%;
+			    font-weight:bold;
+			}
+
+
+			#columnLeft h2{
+				font-family:helvetica;
+			   	text-align:left;
+			    font-size:60pt;
+			    font-weight: bold;
+			    width:800px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			    color: white; /* text color */
+			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
+			    text-transform: uppercase;
+			}
+
+			#columnLeft p{
+				font-family:Georgia;
+			    text-align:left;
+			    font-size:12pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			}
+
+			
+			#columnLeft li{
+			    font-family:Georgia;
+			    text-align:left;
+			    font-size:12pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 130%;
+			}
+
+
+
+
+
+
+
+			.imgBoxmorris { /*afbeelding Morris*/
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/pixel4morris.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+				position: relative;
+				visibility: visible;
+
+
+
+			}
+
+			.imgBoxmorris:hover { 
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/morris.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px; 
+			    position: relative;
+			  
+			}
+
+			.imgBoxdepero{  /*afbeelding Depero*/
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/pixel7depero.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			        position: relative;
+
+
+			}
+
+			.imgBoxdepero:hover { 
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/depero.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;  
+			        position: relative;
+			 
+			}
+
+			.imgBoxxerox { /*afbeelding Xeros*/
+
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel3xerox.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			        position: relative;
+
+
+			}
+
+			.imgBoxxerox:hover { 
+			    width: 300px; 
+			    height:500px; 
+			    background: url(images/xerox.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;  
+			        position: relative;
+			 
+			}
+
+			.imgBoxroth { /*afbeelding Roth*/
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/pixel2roth.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			        position: relative;
+
+
+			}
+
+			.imgBoxroth:hover { 
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/roth2.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			        position: relative;
+
+			}
+
+			.imgBoxcarson { /*afbeelding Carson*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel10carson.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxcarson:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/carson.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+			.imgBoxboom {  /*afbeelding Boom*/
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/pixel9boom.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxboom:hover { 
+			    width: 300px; 
+			    height: 300px; 
+			    background: url(images/boom.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+			}
+			.imgBoxhalem { /*afbeelding Halem*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel6halem.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxhalem:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/halem.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+			.imgBoxreith { /*afbeelding Reith*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel8reith.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxreith:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/reith.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+			.imgBoxkentridge { /*afbeelding Kentridge*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel11kentridge.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxkentridge:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/kentridge.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+			.imgBoxrozendaal { /*afbeelding Rozendaal*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel5rozendaal.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxrozendaal:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/rozendaal.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+
+			.imgBoxatlas { /*afbeelding Atlas*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixel12atlas.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;
+			    position: relative;
+
+			}
+
+			.imgBoxatlas:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/atlas.jpg) no-repeat; 
+			    float: right;
+			    margin-right:100px;   
+			    position: relative;
+
+			}
+
+				.imgBoxprinter{ /*afbeelding Atlas*/
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/pixelprinter.jpg) no-repeat; 
+			   margin-left: 100px;
+			    position: relative;
+
+			}
+
+			.imgBoxprinter:hover { 
+			    width: 300px; 
+			    height: 500px; 
+			    background: url(images/printer.jpg) no-repeat; 
+			   margin-left: 100px;
+			    position: relative;
+
+			}
+
