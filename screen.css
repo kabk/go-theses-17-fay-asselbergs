@@ -1,4 +1,8 @@
-			@media screen and (min-width: 480px) {
+
+
+
+
+		@media screen and (min-width: 480px) {
     nav {
         width: 200px;
         float: left;     /* This makes it float to the left of the main content */
@@ -22,14 +26,13 @@
 
 			#header a {
 				color:blue
-
 			}
+
 			#header a:hover {
 				font-family:helvetica;
 			    color: white; /* text color */
 			    -webkit-text-stroke: 0.5px blue; /* stroke color and weight */
 			    text-decoration: none;
-
 			}
 
 			.element{
@@ -37,23 +40,25 @@
 				 position:absolute; 
 				 margin-left:50px;
 				 margin-top:30px;
-				}
+			}
+
 			#element-1{ 
 				font-family:helvetica; 
-				 letter-spacing: 2px;
-
-				 color: transparent; /* text color */
-			    -webkit-text-stroke: 1.3px blue; /* stroke color and weight */
+				letter-spacing: 2px;
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1.3px black; /* stroke color and weight */
 			    text-decoration: none;z-index:1; 
 			}
-			#element-2{
-				 font-family:georgia; 
-				 color: transparent; /* text color */
-			    -webkit-text-stroke: 1.3px black; /* stroke color and weight */
-			    text-decoration: none; 
-			    z-index:1; }
 
-			.footnote{
+			#element-2{
+				font-family:georgia; 
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1.3px blue; /* stroke color and weight */
+			    text-decoration: none; 
+			    z-index:1; 
+			}
+
+			/*.footnote{
 				width:200px;
 				height:200px;
 				background-color: blue;
@@ -64,8 +69,8 @@
   				text-align:left;
    				font-size:10pt;
    				text-decoration: none;
- 
-			}
+   			}
+*/
 			#intro{
 				margin-top:10vh;
 				font-size:100px;
@@ -77,7 +82,6 @@
 				height:100vh;
 			}
 
-
 			#columnRight{
 				height:100vh;
 				padding:20px;
@@ -86,12 +90,12 @@
 
 			#columnRight br {
   				line-height: 300pt;
-				}
+			}
 
-			#columnLeft h1{
+			#columnLeft h1{ /*navigatie nummering*/
 				font-family: helvetica;
 			    text-align:left;
-			    font-size:20pt;
+			    font-size:10pt;
 			    width:500px;    
 			    height: auto;
 			    margin-right: 120px;
@@ -102,8 +106,7 @@
 			    font-weight:bold;
 			}
 
-
-			#columnLeft h2{
+			#columnLeft h2{ /*outline titels */
 				font-family:helvetica;
 			   	text-align:left;
 			    font-size:60pt;
@@ -120,7 +123,7 @@
 			    text-transform: uppercase;
 			}
 
-			#columnLeft p{
+			#columnLeft p{ /*tekst*/
 				font-family:Georgia;
 			    text-align:left;
 			    font-size:12pt;
@@ -133,8 +136,7 @@
 			    line-height: 110%;
 			}
 
-			
-			#columnLeft li{
+			#columnLeft li{ /*bronnenlijst*/
 			    font-family:Georgia;
 			    text-align:left;
 			    font-size:12pt;
@@ -147,11 +149,56 @@
 			    line-height: 130%;
 			}
 
+			#columnLeft a{ /*links*/
+			    font-family:helvetica;
+			    text-align:left;
+			    font-size:7pt;
+			    line-height:9pt;
+			    color:white;
+			    text-decoration: underline;
+			}
+			    #columnLeft b{ /*links*/
+			    font-family:Georgia;
+			    text-align:left;
+			    font-size:12pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			    font-weight: lighter;
+			    cursor:pointer;
 
 
+			}
+			
+				#columnLeft .bron {
+				font-family: helvetica;
+				position: absolute;
+				padding: 5px;
+				padding-left:8px;
+				right:-100px;	
+				width:210px;	
+				font-size:6.8pt;
+				line-height:9pt;
+				background-color: blue;
+				color:white;
+}
 
+			/*.bron{ /*voetnoten*/
+			/*	padding:30px;
+			   	width:200px;
+				height:200px;
+				background-color: blue;
+				color:white;
+				font-family: helvetica;
+  				text-align:left;
+   				font-size:10pt;
+			}*/
 
-
+			/*afbeeldingen pixel aan uit */
 
 			.imgBoxmorris { /*afbeelding Morris*/
 			    width: 300px; 
@@ -161,9 +208,6 @@
 			    margin-right:100px;
 				position: relative;
 				visibility: visible;
-
-
-
 			}
 
 			.imgBoxmorris:hover { 
@@ -173,8 +217,7 @@
 			    float: right;
 			    margin-right:100px; 
 			    position: relative;
-			  
-			}
+			  }
 
 			.imgBoxdepero{  /*afbeelding Depero*/
 			    width: 300px; 
@@ -182,10 +225,8 @@
 			    background: url(images/pixel7depero.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;
-			        position: relative;
-
-
-			}
+			    position: relative;
+				}
 
 			.imgBoxdepero:hover { 
 			    width: 300px; 
@@ -193,20 +234,17 @@
 			    background: url(images/depero.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;  
-			        position: relative;
+			    position: relative;
 			 
 			}
 
 			.imgBoxxerox { /*afbeelding Xeros*/
-
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel3xerox.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;
-			        position: relative;
-
-
+			    position: relative;
 			}
 
 			.imgBoxxerox:hover { 
@@ -215,8 +253,7 @@
 			    background: url(images/xerox.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;  
-			        position: relative;
-			 
+			   	position: relative;
 			}
 
 			.imgBoxroth { /*afbeelding Roth*/
@@ -225,9 +262,7 @@
 			    background: url(images/pixel2roth.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;
-			        position: relative;
-
-
+			    position: relative;
 			}
 
 			.imgBoxroth:hover { 
@@ -236,8 +271,7 @@
 			    background: url(images/roth2.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;   
-			        position: relative;
-
+			    position: relative;
 			}
 
 			.imgBoxcarson { /*afbeelding Carson*/
@@ -247,7 +281,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxcarson:hover { 
@@ -257,7 +290,6 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
 			}
 
 			.imgBoxboom {  /*afbeelding Boom*/
@@ -267,17 +299,17 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxboom:hover { 
-			    width: 300px; 
-			    height: 300px; 
+			    width: 400px; 
+			    height: 400px; 
 			    background: url(images/boom.jpg) no-repeat; 
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
 			}
+
 			.imgBoxhalem { /*afbeelding Halem*/
 			    width: 300px; 
 			    height: 500px; 
@@ -285,7 +317,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxhalem:hover { 
@@ -295,7 +326,6 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
 			}
 
 			.imgBoxreith { /*afbeelding Reith*/
@@ -305,7 +335,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxreith:hover { 
@@ -315,7 +344,6 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
 			}
 
 			.imgBoxkentridge { /*afbeelding Kentridge*/
@@ -325,7 +353,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxkentridge:hover { 
@@ -335,7 +362,6 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
 			}
 
 			.imgBoxrozendaal { /*afbeelding Rozendaal*/
@@ -345,7 +371,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxrozendaal:hover { 
@@ -355,9 +380,7 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
 			}
-
 
 			.imgBoxatlas { /*afbeelding Atlas*/
 			    width: 300px; 
@@ -366,7 +389,6 @@
 			    float: right;
 			    margin-right:100px;
 			    position: relative;
-
 			}
 
 			.imgBoxatlas:hover { 
@@ -379,11 +401,11 @@
 
 			}
 
-				.imgBoxprinter{ /*afbeelding Atlas*/
+			.imgBoxprinter{ /*afbeelding Atlas*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixelprinter.jpg) no-repeat; 
-			   margin-left: 100px;
+			   	margin-left: 150px;
 			    position: relative;
 
 			}
@@ -392,7 +414,7 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/printer.jpg) no-repeat; 
-			   margin-left: 100px;
+			  	margin-left: 150px;
 			    position: relative;
 
 			}
