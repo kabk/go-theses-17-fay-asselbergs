@@ -2,12 +2,14 @@
 
 
 
-		@media screen and (min-width: 480px) {
+
     nav {
         width: 200px;
         float: left;     /* This makes it float to the left of the main content */
         margin-left: 0;
     }
+
+
 
 
 			#header{ /*navigatie*/
@@ -22,7 +24,9 @@
 			    font-family: helvetica;
 			    font-weight: bold;
 			    text-transform: uppercase;
+			    display: block;
 			}
+
 
 			#header a {
 				color:blue
@@ -34,6 +38,55 @@
 			    -webkit-text-stroke: 0.5px blue; /* stroke color and weight */
 			    text-decoration: none;
 			}
+
+
+
+			#header2{ /*navigatie klein scherm*/
+				top:5px;
+				width:100vw;
+				height:10vh;
+				position:fixed;
+				z-index:999;
+			    text-align: center;
+			    word-spacing: 70px;
+			    font-size: 8pt;
+			    font-family: helvetica;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			    display: block;
+			    
+			}
+			#header2 a {
+				color:blue
+			}
+
+			#header2 a:hover {
+				font-family:helvetica;
+			    color: white; /* text color */
+			    -webkit-text-stroke: 0.5px blue; /* stroke color and weight */
+			    text-decoration: none;
+			}
+			@media screen and (min-width: 480px) { 
+			#header2 a{
+			display:none
+
+			}
+		}
+			@media screen and (max-width: 480px) {
+			#header a{
+			display:none;
+	
+			}
+			#header2 a{
+				position: fixed;
+				text-align: left;
+				display:block;
+				margin:20px;
+				line-height: 15px;
+
+				}
+			}
+
 
 			.element{
 				 font-size:110px; 
@@ -57,28 +110,37 @@
 			    text-decoration: none; 
 			    z-index:1; 
 			}
+			@media screen and (max-width: 480px) { /*zet dit onder je elementen/divs zodat hij eerst definieeet daarna aanpast aan scherm*/
+				.element{
+ 				font-size:33px; 
+				position:absolute; 
+				margin-left:60px;
+				margin-top:7px;
 
-			/*.footnote{
-				width:200px;
-				height:200px;
-				background-color: blue;
-				color:white;
-				margin:5px;
-				margin-right:100px;
-				font-family: helvetica;
-  				text-align:left;
-   				font-size:10pt;
-   				text-decoration: none;
-   			}
-*/
-			#intro{
-				margin-top:10vh;
-				font-size:100px;
-				color:blue;
+				}
+				#element-1{
+				font-family:helvetica; 
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1px black; /* stroke color and weight */
+			    text-decoration: none;z-index:1; 
+				}
+				#element-2{
+				font-family:georgia; 
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
+			    text-decoration: none; 
+			    z-index:1; 
+			    letter-spacing: 2px;
+
 			}
+		}
+
+		#column{
+			display: none;
+		}
 
 			#columnLeft{
-				top:1200px;
+				top:1600px;
 				height:100vh;
 			}
 
@@ -150,13 +212,14 @@
 			}
 
 			#columnLeft a{ /*links*/
-			    font-family:helvetica;
+			    font-family:georgia;
 			    text-align:left;
-			    font-size:7pt;
+			    font-size:9.5pt;
 			    line-height:9pt;
-			    color:white;
-			    text-decoration: underline;
+			    color:blue;
+
 			}
+
 			    #columnLeft b{ /*links*/
 			    font-family:Georgia;
 			    text-align:left;
@@ -177,7 +240,7 @@
 				#columnLeft .bron {
 				font-family: helvetica;
 				position: absolute;
-				padding: 5px;
+				padding: 3.5px;
 				padding-left:8px;
 				right:-100px;	
 				width:210px;	
@@ -186,6 +249,104 @@
 				background-color: blue;
 				color:white;
 }
+
+		/*-----------------VOOR KLEINE VERSIE------------------*/
+
+		@media screen and (max-width: 480px) { 
+				#columnLeft{
+ 				top:500px;
+				height:100vh;
+				}
+
+
+			#columnLeft h1{ /*navigatie nummering*/
+				font-family: helvetica;
+			    text-align:left;
+			    font-size:10pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-left: 120px;
+			    margin-bottom:20px;
+			    display: inline-block;
+			    line-height: 110%;
+			    font-weight:bold;
+			}
+
+			#columnLeft h2{ /*outline titels */
+				font-family:helvetica;
+			   	text-align:left;
+			    font-size:25pt;
+			    font-weight: bold;
+			    width:300px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			    color: white; /* text color */
+			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
+			    text-transform: uppercase;
+			}
+			#columnLeft h3{ /*outline titels */
+				display: none;
+			    
+			}
+
+			#columnLeft p{ /*tekst*/
+				font-family:Georgia;
+			    text-align:left;
+			    font-size:10pt;
+			    width:300px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			}
+
+			#columnLeft li{ /*bronnenlijst*/
+			    font-family:Georgia;
+			    text-align:left;
+			    font-size:10pt;
+			    width:300px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 130%;
+			}
+
+			#columnLeft a{ /*links*/
+			    font-family:georgia;
+			    font-size:7pt;
+			    color:black;
+			    text-decoration: none; 
+			}
+			    #columnLeft b{ /*links*/
+			    font-family:Georgia;
+			    text-align:left;
+			    font-size:12pt;
+			    width:500px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    margin-left: 120px;
+			    display: inline-block;
+			    line-height: 110%;
+			    font-weight: lighter;
+			    cursor:pointer;
+
+
+			}
+			
+				#columnLeft .bron {
+				display:none;
+}
+		}
 
 			/*.bron{ /*voetnoten*/
 			/*	padding:30px;
@@ -417,5 +578,9 @@
 			  	margin-left: 150px;
 			    position: relative;
 
+			}
+
+			.image { /*afbeeldingen*/
+			    display:none;
 			}
 
