@@ -19,7 +19,7 @@
 				position:fixed;
 				z-index:999;
 			    text-align: center;
-			    word-spacing: 70px;
+			    word-spacing: 65px;
 			    font-size: 10pt;
 			    font-family: helvetica;
 			    font-weight: bold;
@@ -154,21 +154,20 @@
   				line-height: 300pt;
 			}
 
-			#columnLeft h1{ /*navigatie nummering*/
+			#columnLeft .h1{ /*navigatie nummering*/
 				font-family: helvetica;
 			    text-align:left;
 			    font-size:10pt;
 			    width:500px;    
 			    height: auto;
 			    margin-right: 120px;
-			    margin-left: 120px;
 			    margin-bottom:20px;
 			    display: inline-block;
 			    line-height: 110%;
 			    font-weight:bold;
 			}
 
-			#columnLeft h2{ /*outline titels */
+			#columnLeft .h2{ /*outline titels */
 				font-family:helvetica;
 			   	text-align:left;
 			    font-size:60pt;
@@ -177,12 +176,21 @@
 			    height: auto;
 			    margin-right: 120px;
 			    margin-bottom:50px;
-			    margin-left: 120px;
 			    display: inline-block;
 			    line-height: 110%;
 			    color: white; /* text color */
 			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
 			    text-transform: uppercase;
+			}
+			#columnLeft h3{ /*outline titels */
+			    color:white;
+		}
+		#columnLeft h4{ /*outline titels */
+ 			display: none;
+
+ 		}
+			    #columnLeft h5{ /*outline titels */
+				display: none;
 			}
 
 			#columnLeft p{ /*tekst*/
@@ -242,12 +250,12 @@
 				position: absolute;
 				padding: 3.5px;
 				padding-left:8px;
-				right:-100px;	
+				right:-150px;	
 				width:210px;	
 				font-size:6.8pt;
 				line-height:9pt;
 				background-color: blue;
-				color:white;
+				color:blue;
 }
 
 		/*-----------------VOOR KLEINE VERSIE------------------*/
@@ -289,10 +297,7 @@
 			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
 			    text-transform: uppercase;
 			}
-			#columnLeft h3{ /*outline titels */
-				display: none;
-			    
-			}
+		
 
 			#columnLeft p{ /*tekst*/
 				font-family:Georgia;
@@ -346,22 +351,11 @@
 				#columnLeft .bron {
 				display:none;
 }
-		}
-
-			/*.bron{ /*voetnoten*/
-			/*	padding:30px;
-			   	width:200px;
-				height:200px;
-				background-color: blue;
-				color:white;
-				font-family: helvetica;
-  				text-align:left;
-   				font-size:10pt;
-			}*/
+		
 
 			/*afbeeldingen pixel aan uit */
 
-			.imgBoxmorris { /*afbeelding Morris*/
+			#columnLeft .imgBoxmorris { /*afbeelding Morris*/
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel4morris.jpg) no-repeat; 
@@ -371,7 +365,7 @@
 				visibility: visible;
 			}
 
-			.imgBoxmorris:hover { 
+			#columnLeft .imgBoxmorris:hover { 
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/morris.jpg) no-repeat; 
@@ -380,7 +374,7 @@
 			    position: relative;
 			  }
 
-			.imgBoxdepero{  /*afbeelding Depero*/
+			#columnLeft .imgBoxdepero{  /*afbeelding Depero*/
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel7depero.jpg) no-repeat; 
@@ -389,7 +383,7 @@
 			    position: relative;
 				}
 
-			.imgBoxdepero:hover { 
+			#columnLeft .imgBoxdepero:hover { 
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/depero.jpg) no-repeat; 
@@ -399,7 +393,7 @@
 			 
 			}
 
-			.imgBoxxerox { /*afbeelding Xeros*/
+			#columnLeft .imgBoxxerox { /*afbeelding Xeros*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel3xerox.jpg) no-repeat; 
@@ -408,7 +402,7 @@
 			    position: relative;
 			}
 
-			.imgBoxxerox:hover { 
+			#columnLeft .imgBoxxerox:hover { 
 			    width: 300px; 
 			    height:500px; 
 			    background: url(images/xerox.jpg) no-repeat; 
@@ -417,7 +411,7 @@
 			   	position: relative;
 			}
 
-			.imgBoxroth { /*afbeelding Roth*/
+			#columnLeft .imgBoxroth { /*afbeelding Roth*/
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel2roth.jpg) no-repeat; 
@@ -426,7 +420,7 @@
 			    position: relative;
 			}
 
-			.imgBoxroth:hover { 
+			#columnLeft .imgBoxroth:hover { 
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/roth2.jpg) no-repeat; 
@@ -435,7 +429,7 @@
 			    position: relative;
 			}
 
-			.imgBoxcarson { /*afbeelding Carson*/
+			#columnLeft .imgBoxcarson { /*afbeelding Carson*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel10carson.jpg) no-repeat; 
@@ -444,7 +438,7 @@
 			    position: relative;
 			}
 
-			.imgBoxcarson:hover { 
+			#columnLeft .imgBoxcarson:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/carson.jpg) no-repeat; 
@@ -453,7 +447,7 @@
 			    position: relative;
 			}
 
-			.imgBoxboom {  /*afbeelding Boom*/
+			#columnLeft .imgBoxboom {  /*afbeelding Boom*/
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel9boom.jpg) no-repeat; 
@@ -462,7 +456,7 @@
 			    position: relative;
 			}
 
-			.imgBoxboom:hover { 
+			#columnLeft .imgBoxboom:hover { 
 			    width: 400px; 
 			    height: 400px; 
 			    background: url(images/boom.jpg) no-repeat; 
@@ -471,7 +465,7 @@
 			    position: relative;
 			}
 
-			.imgBoxhalem { /*afbeelding Halem*/
+			#columnLeft .imgBoxhalem { /*afbeelding Halem*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel6halem.jpg) no-repeat; 
@@ -480,7 +474,7 @@
 			    position: relative;
 			}
 
-			.imgBoxhalem:hover { 
+			#columnLeft .imgBoxhalem:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/halem.jpg) no-repeat; 
@@ -489,7 +483,7 @@
 			    position: relative;
 			}
 
-			.imgBoxreith { /*afbeelding Reith*/
+			#columnLeft .imgBoxreith { /*afbeelding Reith*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel8reith.jpg) no-repeat; 
@@ -498,7 +492,7 @@
 			    position: relative;
 			}
 
-			.imgBoxreith:hover { 
+			#columnLeft .imgBoxreith:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/reith.jpg) no-repeat; 
@@ -507,7 +501,7 @@
 			    position: relative;
 			}
 
-			.imgBoxkentridge { /*afbeelding Kentridge*/
+			#columnLeft .imgBoxkentridge { /*afbeelding Kentridge*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel11kentridge.jpg) no-repeat; 
@@ -516,7 +510,7 @@
 			    position: relative;
 			}
 
-			.imgBoxkentridge:hover { 
+			#columnLeft .imgBoxkentridge:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/kentridge.jpg) no-repeat; 
@@ -525,7 +519,7 @@
 			    position: relative;
 			}
 
-			.imgBoxrozendaal { /*afbeelding Rozendaal*/
+			#columnLeft .imgBoxrozendaal { /*afbeelding Rozendaal*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel5rozendaal.jpg) no-repeat; 
@@ -534,7 +528,7 @@
 			    position: relative;
 			}
 
-			.imgBoxrozendaal:hover { 
+			#columnLeft .imgBoxrozendaal:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/rozendaal.jpg) no-repeat; 
@@ -543,7 +537,7 @@
 			    position: relative;
 			}
 
-			.imgBoxatlas { /*afbeelding Atlas*/
+			#columnLeft .imgBoxatlas { /*afbeelding Atlas*/
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel12atlas.jpg) no-repeat; 
@@ -552,7 +546,7 @@
 			    position: relative;
 			}
 
-			.imgBoxatlas:hover { 
+			#columnLeft .imgBoxatlas:hover { 
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/atlas.jpg) no-repeat; 
@@ -560,25 +554,7 @@
 			    margin-right:100px;   
 			    position: relative;
 
-			}
-
-			.imgBoxprinter{ /*afbeelding Atlas*/
-			    width: 300px; 
-			    height: 500px; 
-			    background: url(images/pixelprinter.jpg) no-repeat; 
-			   	margin-left: 150px;
-			    position: relative;
-
-			}
-
-			.imgBoxprinter:hover { 
-			    width: 300px; 
-			    height: 500px; 
-			    background: url(images/printer.jpg) no-repeat; 
-			  	margin-left: 150px;
-			    position: relative;
-
-			}
+			
 
 			.image { /*afbeeldingen*/
 			    display:none;

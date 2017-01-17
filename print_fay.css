@@ -1,17 +1,30 @@
-			
 			@media print {
-				p {page-break-inside: avoid;}
+				
+				
+				p {page-break-inside: avoid;
+				}
+    			
+    				p{page-break-after: always;
+    			}
+			  
+					h4 {page-break-after: always;
+				}
+				
 
-				margin:5px;
-				margin-bottom:5px;
-
-			}
-
-			@media print {
 				a[href]:after {
-    			content: none !important;
-  }
-}			
+    				content: none !important;
+  				}
+
+  				/*@page {
+				  size: A4;
+				}
+				@page{
+					margin:20px;
+					margin-bottom:25px;
+			}*/
+		}
+
+
 			
 			
 
@@ -29,54 +42,34 @@
 		
 
 			#header{ /*navigatie*/
-				top:5px;
-				width:100vw;
-				height:10vh;
-				position:fixed;
-				z-index:999;
-			    text-align: center;
-			    word-spacing: 70px;
-			    font-size: 10pt;
-			    font-family: helvetica;
-			    font-weight: bold;
-			    text-transform: uppercase;
+			
 			    display: none;
 			}
 
-			#columnRight{
-				height:100vh;
-				padding:20px;
-				top:4000px;
-			}
-
-			#columnRight br {
-  				line-height: 300pt;
-			}
+			
 
 			#columnLeft{
 				height:100vh;
 				top:1600px;
 			}
 
-			#columnLeft h1{
+			#columnLeft .h1{
 				font-family: georgia;
 			    text-align:left;
 			    font-size:20pt;
-			    width:500px;    
+			    width:510px;    
 			    height: auto;
 			    margin-right: 120px;
-			    margin-left: 120px;
-			    margin-bottom:20px;
-			    display: inline-block;
-			    line-height: 110%;
+			    margin-bottom:40px;
+
 			}
 			#columnLeft .bron {
 				font-family: georgia;
 				position: absolute;
 				right:10px;	
-				width:200px;	
-				font-size:7pt;
-				line-height:8pt;
+				width:250px;	
+				font-size:10pt;
+				line-height:10pt;
 
 			}
 			#columnLeft a{ /*links*/
@@ -87,12 +80,42 @@
 			    color:blue;
 
 			}
-			#columnLeft h2{ /*de titel teksten tussenin*/
+			#columnLeft .h2{ /*de titel teksten tussenin*/
 				font-family:goutline;
 			   	text-align:left;
 			    font-size:60pt;
 			    font-weight: ;
-			    width:700px;    
+			    width:810px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-bottom:50px;
+			    display: inline-block;
+			    line-height: 110%;
+			    text-transform: uppercase;
+
+			}
+			#columnLeft h3{ /*outline titels */
+				display: none		
+		}
+
+			#columnLeft h4{ /*inhoudsopgave  */
+				font-family: helvetica;
+			    text-align:left;
+			    font-size:18pt;
+			    width:800px;    
+			    height: auto;
+			    margin-right: 120px;
+			    margin-left: 120px;
+			    margin-bottom:20px;
+			    line-height: 113%;			
+			}
+
+			    #columnLeft h5{ /*outline titels */
+				font-family:goutline;
+			   	text-align:left;
+			    font-size:58pt;
+			    font-weight: ;
+			    width:800px;    
 			    height: auto;
 			    margin-right: 120px;
 			    margin-bottom:50px;
@@ -100,29 +123,26 @@
 			    display: inline-block;
 			    line-height: 110%;
 			    text-transform: uppercase;
-
 			}
 
 			#columnLeft p{ /*tekst*/
 				font-family:Helvetica;
 			    text-align:left;
-			    font-size:15pt;
-			    width:500px;    
-			    height: auto;
+			    font-size:18pt;
+			    width:510px;    
 			    margin-right: 120px;
 			    margin-bottom:50px;
 			    margin-left: 120px;
-			    display: inline-block;
 			    line-height: 113%;
 			    z-index: 1;
-			    page-break-inside: avoid
-
+  				word-break: break-word;
 			    }
 
 			.element{ /*overlappende tekst in outline*/
-				 font-size:100px; 
+				 font-size:95px; 
 				 position:absolute; 
 				 margin-left:30px;
+				 line-height: 120%;
 				}
 			#element-1{ 
 				font-family:goutline;
@@ -134,18 +154,24 @@
 			    text-decoration: none; 
 			    letter-spacing:4.5px;
 			    z-index:1; 
+			    display: none;
 		}
 
-			.image { /*afbeeldingen*/
-			    top:4400px;
-			    margin-right:250px;
-				margin-top: 100px;			   
- 			    margin-bottom:100px;
- 				position: relative;
- 				float:right;
-			    display:block;
-			    z-index: -1;
-}
+		#columnRight{
+				height:auto;
+				padding:20px;
+				top:11500px; /*dit moet je waarschijnlijk ff aanpassen nog, voor de hoogte*/
+				/*background-color: grey !important;*/
+				float:left;
+				width:18cm;
+				position: absolute;
+				margin-left:15cm;
+				z-index: -1;
+			}
 
-			  
+			#columnRight br {
+  				line-height: 400pt;
+			}
+
+			
 			
