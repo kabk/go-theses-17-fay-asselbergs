@@ -14,14 +14,6 @@
 				a[href]:after {
     				content: none !important;
   				}
-
-  				/*@page {
-				  size: A4;
-				}
-				@page{
-					margin:20px;
-					margin-bottom:25px;
-			}*/
 		}
 
 
@@ -84,7 +76,6 @@
 				font-family:goutline;
 			   	text-align:left;
 			    font-size:60pt;
-			    font-weight: ;
 			    width:810px;    
 			    height: auto;
 			    margin-right: 120px;
@@ -114,7 +105,6 @@
 				font-family:goutline;
 			   	text-align:left;
 			    font-size:58pt;
-			    font-weight: ;
 			    width:800px;    
 			    height: auto;
 			    margin-right: 120px;

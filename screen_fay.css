@@ -1,17 +1,4 @@
 
-
-
-
-
-    nav {
-        width: 200px;
-        float: left;     /* This makes it float to the left of the main content */
-        margin-left: 0;
-    }
-
-
-
-
 			#header{ /*navigatie*/
 				top:5px;
 				width:100vw;
@@ -112,10 +99,36 @@
 			}
 			@media screen and (max-width: 480px) { /*zet dit onder je elementen/divs zodat hij eerst definieeet daarna aanpast aan scherm*/
 				.element{
- 				font-size:33px; 
+ 				font-size:20pt; 
 				position:absolute; 
-				margin-left:60px;
+				margin-left:0px;
 				margin-top:7px;
+
+				}
+				#element-1{
+				font-family:helvetica; 
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1px black; /* stroke color and weight */
+			    text-decoration: none;z-index:1; 
+				}
+				#element-2{
+				font-family:georgia; 
+				color: transparent; /* text color */
+			    -webkit-text-stroke: 1px blue; /* stroke color and weight */
+			    text-decoration: none; 
+			    z-index:1; 
+			    letter-spacing: 2px;
+
+			}
+		}
+
+			@media screen and (max-width: 920px) { /*zet dit onder je elementen/divs zodat hij eerst definieeet daarna aanpast aan scherm*/
+				.element{
+ 				font-size:80px; 
+				position:absolute; 
+				margin-left:30px;
+				margin-top:7px;
+				margin-right: 10px;
 
 				}
 				#element-1{
@@ -255,42 +268,40 @@
 				font-size:6.8pt;
 				line-height:9pt;
 				background-color: blue;
-				color:blue;
+				color:white;
 }
 
 		/*-----------------VOOR KLEINE VERSIE------------------*/
 
 		@media screen and (max-width: 480px) { 
 				#columnLeft{
- 				top:500px;
+ 				top:800px;
 				height:100vh;
 				}
 
 
-			#columnLeft h1{ /*navigatie nummering*/
+			#columnLeft .h1{ /*navigatie nummering*/
 				font-family: helvetica;
 			    text-align:left;
 			    font-size:10pt;
 			    width:500px;    
 			    height: auto;
 			    margin-right: 120px;
-			    margin-left: 120px;
 			    margin-bottom:20px;
 			    display: inline-block;
 			    line-height: 110%;
 			    font-weight:bold;
 			}
 
-			#columnLeft h2{ /*outline titels */
+			#columnLeft .h2{ /*outline titels */
 				font-family:helvetica;
 			   	text-align:left;
-			    font-size:25pt;
+			    font-size:30pt;
 			    font-weight: bold;
 			    width:300px;    
 			    height: auto;
 			    margin-right: 120px;
 			    margin-bottom:50px;
-			    margin-left: 120px;
 			    display: inline-block;
 			    line-height: 110%;
 			    color: white; /* text color */
@@ -307,7 +318,6 @@
 			    height: auto;
 			    margin-right: 120px;
 			    margin-bottom:50px;
-			    margin-left: 120px;
 			    display: inline-block;
 			    line-height: 110%;
 			}
@@ -320,7 +330,6 @@
 			    height: auto;
 			    margin-right: 120px;
 			    margin-bottom:50px;
-			    margin-left: 120px;
 			    display: inline-block;
 			    line-height: 130%;
 			}
@@ -345,22 +354,29 @@
 			    font-weight: lighter;
 			    cursor:pointer;
 
-
 			}
-			
+		
 				#columnLeft .bron {
 				display:none;
-}
-		
+				}
+		}
 
-			/*afbeeldingen pixel aan uit */
+			
+
+
+
+
+
+
+
+/*-----------------------afbeeldingen pixel aan uit -----------------------*/
 
 			#columnLeft .imgBoxmorris { /*afbeelding Morris*/
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel4morris.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;
+			   	margin-left: 110px;
+			    margin-right:200px;
 				position: relative;
 				visibility: visible;
 			}
@@ -369,8 +385,8 @@
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/morris.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px; 
+			    margin-left: 110px;
+			    margin-right:200px; 
 			    position: relative;
 			  }
 
@@ -379,7 +395,7 @@
 			    height: 300px; 
 			    background: url(images/pixel7depero.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;
+			    margin-right:70px;
 			    position: relative;
 				}
 
@@ -388,7 +404,7 @@
 			    height: 300px; 
 			    background: url(images/depero.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;  
+			    margin-right:70px;  
 			    position: relative;
 			 
 			}
@@ -397,8 +413,8 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel3xerox.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;
+			     margin-left: 110px;
+			    margin-right:200px; 
 			    position: relative;
 			}
 
@@ -406,8 +422,8 @@
 			    width: 300px; 
 			    height:500px; 
 			    background: url(images/xerox.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;  
+			   margin-left: 110px;
+			    margin-right:200px;   
 			   	position: relative;
 			}
 
@@ -416,7 +432,7 @@
 			    height: 300px; 
 			    background: url(images/pixel2roth.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;
+			    margin-right:70px;
 			    position: relative;
 			}
 
@@ -425,7 +441,7 @@
 			    height: 300px; 
 			    background: url(images/roth2.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;   
+			    margin-right:70px;   
 			    position: relative;
 			}
 
@@ -434,7 +450,7 @@
 			    height: 500px; 
 			    background: url(images/pixel10carson.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;
+			    margin-right:70px;
 			    position: relative;
 			}
 
@@ -443,7 +459,7 @@
 			    height: 500px; 
 			    background: url(images/carson.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;   
+			    margin-right:70px;   
 			    position: relative;
 			}
 
@@ -451,8 +467,8 @@
 			    width: 300px; 
 			    height: 300px; 
 			    background: url(images/pixel9boom.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;
+			    margin-left: 110px;
+			    margin-right:200px; 
 			    position: relative;
 			}
 
@@ -460,8 +476,8 @@
 			    width: 400px; 
 			    height: 400px; 
 			    background: url(images/boom.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;   
+			    margin-left: 110px;
+			    margin-right:200px;    
 			    position: relative;
 			}
 
@@ -470,7 +486,7 @@
 			    height: 500px; 
 			    background: url(images/pixel6halem.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;
+			    margin-right:70px;
 			    position: relative;
 			}
 
@@ -479,7 +495,7 @@
 			    height: 500px; 
 			    background: url(images/halem.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;   
+			    margin-right:70px;   
 			    position: relative;
 			}
 
@@ -487,8 +503,8 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel8reith.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;
+			 margin-left: 110px;
+			    margin-right:200px; 
 			    position: relative;
 			}
 
@@ -496,8 +512,8 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/reith.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;   
+			     margin-left: 110px;
+			    margin-right:200px;    
 			    position: relative;
 			}
 
@@ -506,7 +522,7 @@
 			    height: 500px; 
 			    background: url(images/pixel11kentridge.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;
+			    margin-right:70px;
 			    position: relative;
 			}
 
@@ -515,7 +531,7 @@
 			    height: 500px; 
 			    background: url(images/kentridge.jpg) no-repeat; 
 			    float: right;
-			    margin-right:100px;   
+			    margin-right:70px;   
 			    position: relative;
 			}
 
@@ -523,8 +539,8 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/pixel5rozendaal.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;
+			    margin-left: 110px;
+			    margin-right:200px; 
 			    position: relative;
 			}
 
@@ -532,8 +548,8 @@
 			    width: 300px; 
 			    height: 500px; 
 			    background: url(images/rozendaal.jpg) no-repeat; 
-			    float: right;
-			    margin-right:100px;   
+			    margin-left: 110px;
+			    margin-right:200px;   
 			    position: relative;
 			}
 
@@ -553,8 +569,13 @@
 			    float: right;
 			    margin-right:100px;   
 			    position: relative;
-
+			}
 			
+
+
+
+
+
 
 			.image { /*afbeeldingen*/
 			    display:none;
